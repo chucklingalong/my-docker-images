@@ -1,5 +1,5 @@
 # my-docker-images
-##My Docker Images For Personal Testing##
+*My Docker Images For Personal Testing*
 
 Builds on top of the official WordPress docker image
 - Increases upload limit to 32MB
