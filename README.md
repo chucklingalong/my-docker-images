@@ -16,10 +16,10 @@ Using the image with a separate container for data:
 
 docker run -d --name wp-data chucklingalong/data tail -f /dev/null
 
-docker run --name mysql --volumes-from wp-data \
+docker run --name mysql --volumes-from wp-data 
  -e MYSQL_ROOT_PASSWORD=yourpasswordgoeshere -d mysql
 
-docker run --name wordpress --volumes-from wp-data \
+docker run --name wordpress --volumes-from wp-data 
  --link mysql:mysql -d -p 1080:80 chucklingalong/wordpress
 
 
